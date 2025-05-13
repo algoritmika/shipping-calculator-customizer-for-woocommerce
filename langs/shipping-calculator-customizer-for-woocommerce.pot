@@ -1,0 +1,161 @@
+# Copyright (C) 2025 Algoritmika Ltd
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Shipping Calculator Customizer for WooCommerce 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/shipping-calculator-customizer-for-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-05-13T13:01:09+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: shipping-calculator-customizer-for-woocommerce\n"
+
+#. Plugin Name of the plugin
+#: shipping-calculator-customizer-for-woocommerce.php
+msgid "Shipping Calculator Customizer for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: shipping-calculator-customizer-for-woocommerce.php
+msgid "https://wordpress.org/support/plugin/shipping-calculator-customizer-for-woocommerce/"
+msgstr ""
+
+#. Description of the plugin
+#: shipping-calculator-customizer-for-woocommerce.php
+msgid "Customize WooCommerce shipping calculator on cart page. Beautifully."
+msgstr ""
+
+#. Author of the plugin
+#: shipping-calculator-customizer-for-woocommerce.php
+msgid "Algoritmika Ltd"
+msgstr ""
+
+#. Author URI of the plugin
+#: shipping-calculator-customizer-for-woocommerce.php
+msgid "https://profiles.wordpress.org/algoritmika/"
+msgstr ""
+
+#: includes/class-alg-wc-scc.php:177
+msgid "Settings"
+msgstr ""
+
+#: includes/settings/class-alg-wc-scc-settings-general.php:25
+#: includes/settings/class-alg-wc-scc-settings-general.php:39
+msgid "General"
+msgstr ""
+
+#: includes/settings/class-alg-wc-scc-settings-general.php:44
+msgid "Enable shipping calculator"
+msgstr ""
+
+#: includes/settings/class-alg-wc-scc-settings-general.php:45
+#: includes/settings/class-alg-wc-scc-settings-general.php:52
+#: includes/settings/class-alg-wc-scc-settings-general.php:83
+#: includes/settings/class-alg-wc-scc-settings-general.php:90
+#: includes/settings/class-alg-wc-scc-settings-general.php:97
+#: includes/settings/class-alg-wc-scc-settings-general.php:104
+#: includes/settings/class-alg-wc-scc-settings-general.php:124
+#: includes/settings/class-alg-wc-scc-settings-general.php:138
+msgid "Enable"
+msgstr ""
+
+#: includes/settings/class-alg-wc-scc-settings-general.php:51
+msgid "Force open"
+msgstr ""
+
+#: includes/settings/class-alg-wc-scc-settings-general.php:58
+msgid "\"Change address\" button"
+msgstr ""
+
+#: includes/settings/class-alg-wc-scc-settings-general.php:59
+msgid "Ignored unless \"Force open\" option is enabled."
+msgstr ""
+
+#: includes/settings/class-alg-wc-scc-settings-general.php:65
+msgid "Hide"
+msgstr ""
+
+#: includes/settings/class-alg-wc-scc-settings-general.php:66
+msgid "Make non clickable"
+msgstr ""
+
+#: includes/settings/class-alg-wc-scc-settings-general.php:77
+msgid "Fields"
+msgstr ""
+
+#: includes/settings/class-alg-wc-scc-settings-general.php:82
+msgid "Country"
+msgstr ""
+
+#: includes/settings/class-alg-wc-scc-settings-general.php:89
+msgid "State"
+msgstr ""
+
+#: includes/settings/class-alg-wc-scc-settings-general.php:96
+msgid "City"
+msgstr ""
+
+#: includes/settings/class-alg-wc-scc-settings-general.php:103
+msgid "Postcode"
+msgstr ""
+
+#: includes/settings/class-alg-wc-scc-settings-general.php:117
+msgid "Custom Info"
+msgstr ""
+
+#: includes/settings/class-alg-wc-scc-settings-general.php:118
+msgid "Custom info before/after the shipping calculator."
+msgstr ""
+
+#: includes/settings/class-alg-wc-scc-settings-general.php:123
+msgid "Before"
+msgstr ""
+
+#: includes/settings/class-alg-wc-scc-settings-general.php:130
+msgid "Custom info before the shipping calculator. You can use HTML and/or shortcodes here."
+msgstr ""
+
+#: includes/settings/class-alg-wc-scc-settings-general.php:137
+msgid "After"
+msgstr ""
+
+#: includes/settings/class-alg-wc-scc-settings-general.php:144
+msgid "Custom info after the shipping calculator. You can use HTML and/or shortcodes here."
+msgstr ""
+
+#: includes/settings/class-alg-wc-scc-settings-general.php:158
+#: includes/settings/class-alg-wc-scc-settings-general.php:163
+msgid "Labels"
+msgstr ""
+
+#: includes/settings/class-alg-wc-scc-settings-general.php:164
+msgid "Enable section"
+msgstr ""
+
+#: includes/settings/class-alg-wc-settings-scc.php:26
+msgid "Shipping Calculator Customizer"
+msgstr ""
+
+#: includes/settings/class-alg-wc-settings-scc.php:47
+msgid "Reset Settings"
+msgstr ""
+
+#: includes/settings/class-alg-wc-settings-scc.php:52
+msgid "Reset section settings"
+msgstr ""
+
+#: includes/settings/class-alg-wc-settings-scc.php:53
+msgid "Reset"
+msgstr ""
+
+#: includes/settings/class-alg-wc-settings-scc.php:54
+msgid "Check the box and save changes to reset."
+msgstr ""
+
+#: includes/settings/class-alg-wc-settings-scc.php:94
+msgid "Your settings have been reset."
+msgstr ""

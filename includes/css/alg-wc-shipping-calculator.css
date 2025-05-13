@@ -1,0 +1,16 @@
+/**
+ * alg-wc-shipping-calculator.css
+ *
+ * @version 1.0.0
+ * @since   1.0.0
+ *
+ * @author  Algoritmika Ltd.
+ */
+
+a.shipping-calculator-button {
+	visibility: hidden;
+}
+
+button[name=calc_shipping] {
+	visibility: hidden;
+}
