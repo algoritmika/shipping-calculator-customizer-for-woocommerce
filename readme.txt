@@ -56,7 +56,8 @@ The plugin ensures that customers can quickly and easily estimate their shipping
 
 == Changelog ==
 
-= 2.0.0 - 13/05/2025 =
+= 2.0.0 - 19/05/2025 =
+* Fix - Translations - Text domain fixed.
 * Dev - "Labels" section moved to the free plugin version.
 * Dev - "High-Performance Order Storage (HPOS)" compatibility.
 * Dev - PHP v8.2 compatibility (dynamic properties).

@@ -167,15 +167,15 @@ class Alg_WC_SCC_Settings_General extends Alg_WC_SCC_Settings_Section {
 				'type'     => 'checkbox',
 			),
 			array(
-				'title'    => '"' . __( 'Change address', 'woocommerce' ) . '"', // phpcs:ignore WordPress.WP.I18n.TextDomainMismatch
+				'title'    => '"' . __( 'Change address', 'shipping-calculator-customizer-for-woocommerce' ) . '"',
 				'id'       => 'alg_wc_shipping_calculator_label_calculate_shipping',
-				'default'  => __( 'Change address', 'woocommerce' ), // phpcs:ignore WordPress.WP.I18n.TextDomainMismatch
+				'default'  => __( 'Change address', 'shipping-calculator-customizer-for-woocommerce' ),
 				'type'     => 'text',
 			),
 			array(
-				'title'    => '"' . __( 'Update', 'woocommerce' ) . '"', // phpcs:ignore WordPress.WP.I18n.TextDomainMismatch
+				'title'    => '"' . __( 'Update', 'shipping-calculator-customizer-for-woocommerce' ) . '"',
 				'id'       => 'alg_wc_shipping_calculator_label_update_totals',
-				'default'  => __( 'Update', 'woocommerce' ), // phpcs:ignore WordPress.WP.I18n.TextDomainMismatch
+				'default'  => __( 'Update', 'shipping-calculator-customizer-for-woocommerce' ),
 				'type'     => 'text',
 			),
 			array(

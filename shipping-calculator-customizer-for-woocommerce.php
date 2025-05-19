@@ -6,6 +6,7 @@ Description: Customize WooCommerce shipping calculator on cart page. Beautifully
 Version: 2.0.0
 Author: Algoritmika Ltd
 Author URI: https://profiles.wordpress.org/algoritmika/
+Requires at least: 4.4
 Text Domain: shipping-calculator-customizer-for-woocommerce
 Domain Path: /langs
 WC tested up to: 9.8

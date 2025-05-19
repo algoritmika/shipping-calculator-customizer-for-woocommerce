@@ -53,52 +53,50 @@ class Alg_WC_SCC_Core {
 
 		// Force open
 		add_action(
-			'wp_head',
+			'wp_enqueue_scripts',
 			array( $this, 'force_block_open' )
 		);
 
 		// Labels
-		if ( 'yes' === get_option( 'alg_wc_shipping_calculator_labels_enabled', 'no' ) ) {
-			add_action(
-				'wp_enqueue_scripts',
-				array( $this, 'change_labels' )
-			);
-		}
+		add_action(
+			'wp_enqueue_scripts',
+			array( $this, 'change_labels' )
+		);
 
 		// Custom Info
-		if ( 'yes' === get_option( 'alg_wc_shipping_calculator_enable_info_before', 'no' ) ) {
-			add_action(
-				'woocommerce_before_shipping_calculator',
-				array( $this, 'add_custom_info_before' )
-			);
-		}
-		if ( 'yes' === get_option( 'alg_wc_shipping_calculator_enable_info_after', 'no' ) ) {
-			add_action(
-				'woocommerce_after_shipping_calculator',
-				array( $this, 'add_custom_info_after' )
-			);
-		}
+		add_action(
+			'woocommerce_before_shipping_calculator',
+			array( $this, 'add_custom_info_before' )
+		);
+		add_action(
+			'woocommerce_after_shipping_calculator',
+			array( $this, 'add_custom_info_after' )
+		);
 
 	}
 
 	/**
 	 * add_custom_info_before.
 	 *
-	 * @version 1.0.0
+	 * @version 2.0.0
 	 * @since   1.0.0
 	 */
 	function add_custom_info_before() {
-		echo do_shortcode( get_option( 'alg_wc_shipping_calculator_info_before', '' ) );
+		if ( 'yes' === get_option( 'alg_wc_shipping_calculator_enable_info_before', 'no' ) ) {
+			echo do_shortcode( get_option( 'alg_wc_shipping_calculator_info_before', '' ) );
+		}
 	}
 
 	/**
 	 * add_custom_info_after.
 	 *
-	 * @version 1.0.0
+	 * @version 2.0.0
 	 * @since   1.0.0
 	 */
 	function add_custom_info_after() {
-		echo do_shortcode( get_option( 'alg_wc_shipping_calculator_info_after', '' ) );
+		if ( 'yes' === get_option( 'alg_wc_shipping_calculator_enable_info_after', 'no' ) ) {
+			echo do_shortcode( get_option( 'alg_wc_shipping_calculator_info_after', '' ) );
+		}
 	}
 
 	/**
@@ -108,6 +106,10 @@ class Alg_WC_SCC_Core {
 	 * @since   1.0.0
 	 */
 	function change_labels() {
+
+		if ( 'no' === get_option( 'alg_wc_shipping_calculator_labels_enabled', 'no' ) ) {
+			return;
+		}
 
 		if (
 			! function_exists( 'is_cart' ) ||
@@ -141,11 +143,11 @@ class Alg_WC_SCC_Core {
 			array(
 				'calculate_shipping_label' => get_option(
 					'alg_wc_shipping_calculator_label_calculate_shipping',
-					__( 'Change address', 'woocommerce' ) // phpcs:ignore WordPress.WP.I18n.TextDomainMismatch
+					__( 'Change address', 'shipping-calculator-customizer-for-woocommerce' )
 				),
 				'update_totals_label'      => get_option(
 					'alg_wc_shipping_calculator_label_update_totals',
-					__( 'Update', 'woocommerce' ) // phpcs:ignore WordPress.WP.I18n.TextDomainMismatch
+					__( 'Update', 'shipping-calculator-customizer-for-woocommerce' )
 				),
 			)
 		);
@@ -164,23 +166,38 @@ class Alg_WC_SCC_Core {
 			return;
 		}
 
-		?>
-		<style type="text/css">
-			.shipping-calculator-form {
-				display: block !important;
-			}
-			<?php if ( 'hide' === get_option( 'alg_wc_shipping_calculator_enable_force_block_open_button', 'hide' ) ) { ?>
+		$min_suffix = ( defined( 'WP_DEBUG' ) && true === WP_DEBUG ? '' : '.min' );
+		$plugin_url = alg_wc_shipping_calculator_customizer()->plugin_url();
+		$version    = alg_wc_shipping_calculator_customizer()->version;
+
+		wp_enqueue_style(
+			'alg-wc-shipping-calculator-force-block-open',
+			$plugin_url . '/includes/css/alg-wc-shipping-calculator-force-block-open' . $min_suffix . '.css',
+			array(),
+			$version
+		);
+
+		ob_start();
+		if ( 'hide' === get_option( 'alg_wc_shipping_calculator_enable_force_block_open_button', 'hide' ) ) {
+			?>
 			a.shipping-calculator-button {
 				display: none !important;
 			}
-			<?php } else { // 'noclick' ?>
+			<?php
+		} else { // 'noclick'
+			?>
 			a.shipping-calculator-button {
 				pointer-events: none;
 				cursor: default;
 			}
-			<?php } ?>
-		</style>
-		<?php
+			<?php
+		}
+		$custom_css = ob_get_clean();
+
+		wp_add_inline_style(
+			'alg-wc-shipping-calculator-force-block-open',
+			$custom_css
+		);
 
 	}
 

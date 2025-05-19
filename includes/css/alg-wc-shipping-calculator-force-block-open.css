@@ -1,0 +1,12 @@
+/**
+ * alg-wc-shipping-calculator-force-block-open.css
+ *
+ * @version 2.0.0
+ * @since   2.0.0
+ *
+ * @author  Algoritmika Ltd.
+ */
+
+.shipping-calculator-form {
+	display: block !important;
+}

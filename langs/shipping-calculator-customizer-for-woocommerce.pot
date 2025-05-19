@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-05-13T13:01:09+00:00\n"
+"POT-Creation-Date: 2025-05-19T15:06:33+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: shipping-calculator-customizer-for-woocommerce\n"
@@ -37,6 +37,18 @@ msgstr ""
 #. Author URI of the plugin
 #: shipping-calculator-customizer-for-woocommerce.php
 msgid "https://profiles.wordpress.org/algoritmika/"
+msgstr ""
+
+#: includes/class-alg-wc-scc-core.php:146
+#: includes/settings/class-alg-wc-scc-settings-general.php:170
+#: includes/settings/class-alg-wc-scc-settings-general.php:172
+msgid "Change address"
+msgstr ""
+
+#: includes/class-alg-wc-scc-core.php:150
+#: includes/settings/class-alg-wc-scc-settings-general.php:176
+#: includes/settings/class-alg-wc-scc-settings-general.php:178
+msgid "Update"
 msgstr ""
 
 #: includes/class-alg-wc-scc.php:177
