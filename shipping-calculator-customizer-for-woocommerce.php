@@ -3,7 +3,7 @@
 Plugin Name: Shipping Calculator Customizer for WooCommerce
 Plugin URI: https://wordpress.org/support/plugin/shipping-calculator-customizer-for-woocommerce/
 Description: Customize WooCommerce shipping calculator on cart page. Beautifully.
-Version: 2.0.0
+Version: 2.0.1
 Author: Algoritmika Ltd
 Author URI: https://profiles.wordpress.org/algoritmika/
 Requires at least: 4.4
@@ -37,7 +37,7 @@ if ( 'shipping-calculator-customizer-for-woocommerce.php' === basename( __FILE__
 	}
 }
 
-defined( 'ALG_WC_SCC_VERSION' ) || define ( 'ALG_WC_SCC_VERSION', '2.0.0' );
+defined( 'ALG_WC_SCC_VERSION' ) || define ( 'ALG_WC_SCC_VERSION', '2.0.1' );
 
 defined( 'ALG_WC_SCC_FILE' ) || define ( 'ALG_WC_SCC_FILE', __FILE__ );
 

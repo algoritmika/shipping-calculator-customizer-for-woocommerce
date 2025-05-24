@@ -1,9 +1,9 @@
 === Shipping Calculator Customizer for WooCommerce ===
-Contributors: algoritmika, anbinder, karzin
+Contributors: algoritmika, thankstoit, anbinder, karzin
 Tags: woocommerce, shipping calculator, shipping, calculator, woo commerce
 Requires at least: 4.4
 Tested up to: 6.8
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -55,6 +55,9 @@ The plugin ensures that customers can quickly and easily estimate their shipping
 3. Start by visiting plugin settings at "WooCommerce > Settings > Shipping Calculator Customizer".
 
 == Changelog ==
+
+= 2.0.1 - 24/05/2025 =
+* readme.txt updated.
 
 = 2.0.0 - 19/05/2025 =
 * Fix - Translations - Text domain fixed.
